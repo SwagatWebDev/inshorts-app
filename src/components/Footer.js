@@ -9,12 +9,6 @@ const Footer = () => {
                     <p>Stay informed with concise news snippets from around the world!</p>
                     <p className="text-sm">&copy; {new Date().getFullYear()} Inshorts. All Rights Reserved.</p>
                 </div>
-                <div className="address text-black">
-                    <h3 className="text-lg font-bold mb-2">Contact Us</h3>
-                    <p>New Delhi, India</p>
-                    <p>Email: contact@inshorts.com</p>
-                    <p>Phone: +91 7358408160</p>
-                </div>
             </div>
         </div>
     );
