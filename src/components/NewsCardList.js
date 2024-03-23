@@ -1,9 +1,9 @@
-// NewsCardList.js
-import React from 'react';
-import NewsCard from './NewsCard'; // Correct the import path
+import React, { useState } from 'react';
+import NewsCard from './NewsCard';
 
 const NewsCardList = () => {
-    // Sample news data
+    const [currentIndex, setCurrentIndex] = useState(0);
+
     const newsData = [
         {
             imageUrl: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTr-F0EgNyAOYhGaIuianHdfmI5B8BzAOBCJO-ik7bqEyuyjoyL",
@@ -23,20 +23,28 @@ const NewsCardList = () => {
             details: "Union Home Minister Amit Shah, reacting to the Supreme Court's verdict on electoral bonds, said, \"I fully respect the...decision. But I feel...instead of completely scrapping the electoral bonds, it should've been improved.\" \"Out of the total ₹20,000 crore electoral bonds, the BJP has got approximately ₹6,000 crore. Where did the rest of the bonds go?\" he added.",
             link: "https://www.hindustantimes.com/india-news/amit-shah-reacts-to-electoral-bonds-verdict-fully-respect-order-but-101710547406807-amp.html?utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts"
         }
-        // Add more news objects as needed
     ];
 
+    const handleScroll = (e) => {
+        const direction = e.deltaY > 0 ? 'down' : 'up';
+        if (direction === 'down' && currentIndex < newsData.length - 1) {
+            setCurrentIndex(prevIndex => prevIndex + 1); // Scroll down
+        } else if (direction === 'up' && currentIndex > 0) {
+            setCurrentIndex(prevIndex => prevIndex - 1); // Scroll up
+        }
+    };
+
     return (
-        <div className="flex flex-wrap justify-center">
-            {newsData.map((news, index) => (
+        <div onWheel={handleScroll} className="overflow-hidden">
+            <div className="flex justify-center">
                 <NewsCard
-                    key={index}
-                    imageUrl={news.imageUrl}
-                    title={news.title}
-                    details={news.details}
-                    link={news.link}
+                    imageUrl={newsData[currentIndex].imageUrl}
+                    title={newsData[currentIndex].title}
+                    details={newsData[currentIndex].details}
+                    link={newsData[currentIndex].link}
+                    className="transition-opacity duration-300 ease-in-out"
                 />
-            ))}
+            </div>
         </div>
     );
 };
