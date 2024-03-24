@@ -59,6 +59,7 @@ const NewsCardList = () => {
                         title={newsData[currentIndex].title}
                         details={newsData[currentIndex].details}
                         link={newsData[currentIndex].link}
+                        shortDetails={newsData[currentIndex].shortDetails}
                         className="transition-opacity duration-500 ease-in-out" // Adjust transition duration
                     />
                 )}
