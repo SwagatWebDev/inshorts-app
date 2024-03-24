@@ -12,8 +12,8 @@ const NewsCard = ({ imageUrl, title, details, link, shortDetails }) => {
 
             {/* Body Section */}
             <div className="flex-grow px-6 py-4 overflow-y-auto">
-                <h2 className="text-lg font-bold mb-2">{title}</h2>
-                <p className="text-gray-700 text-base">{details}</p>
+                <h2 className="text-md font-bold mb-2">{title}</h2>
+                <p className="text-gray-700 text-sm">{details}</p>
             </div>
             {/* Horizontal line */}
             <hr className="border-t border-gray-300" />
