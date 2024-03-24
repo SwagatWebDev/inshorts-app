@@ -6,9 +6,9 @@ import NewsCardList from "./NewsCardList";
 const Home = () => {
     return (
         <div>
-            {/*<Header/>*/}
+            <Header/>
             <NewsCardList/>
-            {/*<Footer/>*/}
+            <Footer/>
         </div>
     );
 }
