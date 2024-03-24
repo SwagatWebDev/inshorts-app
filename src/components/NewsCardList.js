@@ -19,7 +19,7 @@ const NewsCardList = () => {
                     setCurrentIndex(prevIndex => prevIndex - 1); // Scroll up
                 }
                 setScrolling(true);
-                setTimeout(() => setScrolling(false), 500); // Adjust scroll debounce time
+                setTimeout(() => setScrolling(false), 800); // Adjust scroll debounce time
             }
         };
 
@@ -60,7 +60,7 @@ const NewsCardList = () => {
                         details={newsData[currentIndex].details}
                         link={newsData[currentIndex].link}
                         shortDetails={newsData[currentIndex].shortDetails}
-                        className="transition-opacity duration-500 ease-in-out" // Adjust transition duration
+                        className="transition-opacity duration-1000 ease-in-out" // Adjust transition duration
                     />
                 )}
             </div>

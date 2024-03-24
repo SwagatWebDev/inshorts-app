@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.card-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Adjust the transition duration as needed */
+}
+
+.card-container .active {
+    transform: translateY(-100%);
+}
+
+.NewsCard {
+    /* Your NewsCard styles */
+}
+
