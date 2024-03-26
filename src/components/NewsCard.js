@@ -40,9 +40,9 @@ const NewsCard = ({ imageUrl, title, details, link, shortDetails }) => {
             <hr className="border-t border-gray-300" />
 
             {/* Body Section */}
-            <div className="flex-grow px-6 py-3 overflow-hidden" style={{ maxHeight: '300px' }}>
+            <div className="flex-grow px-6 py-3 overflow-hidden" style={{ maxHeight: '295px' }}>
                 <h2 className="text-md font-bold mb-2">{title}</h2>
-                <p className="text-gray-700 text-sm" style={{ height: '300px', overflow: 'hidden', textOverflow: 'ellipsis', display: '-webkit-box', WebkitLineClamp: 6, WebkitBoxOrient: 'vertical' }}>
+                <p className="text-gray-700 text-sm" style={{ height: '295px', overflow: 'hidden', textOverflow: 'ellipsis', display: '-webkit-box', WebkitLineClamp: 6, WebkitBoxOrient: 'vertical' }}>
                     {details}
                 </p>
             </div>
