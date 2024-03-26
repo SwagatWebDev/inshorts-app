@@ -1,19 +1,50 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const NewsCard = ({ imageUrl, title, details, link, shortDetails }) => {
+    const [swipeDirection, setSwipeDirection] = useState(null);
+    const [startY, setStartY] = useState(null);
+
+    const handleTouchStart = (e) => {
+        setStartY(e.touches[0].clientY);
+    };
+
+    const handleTouchMove = (e) => {
+        if (!startY) return;
+        const currentY = e.touches[0].clientY;
+        const diff = startY - currentY;
+
+        if (diff > 0) {
+            // Swipe up detected
+            setSwipeDirection('up');
+        } else {
+            // Swipe down detected
+            setSwipeDirection('down');
+        }
+    };
+
+    const handleTouchEnd = () => {
+        setStartY(null);
+        setSwipeDirection(null);
+    };
+
     return (
-        <div className="max-w-md bg-white rounded-xl overflow-hidden shadow-md m-2 flex-grow flex flex-col">
+        <div className={`max-w-md bg-white rounded-xl overflow-hidden shadow-md m-2 flex-grow flex flex-col swipe-${swipeDirection}`}
+             onTouchStart={handleTouchStart}
+             onTouchMove={handleTouchMove}
+             onTouchEnd={handleTouchEnd}>
             {/* Header Section */}
             <div className="flex-none">
-                <img className="w-full object-cover" src={imageUrl} alt={title} />
+                <img className="w-full object-cover" src={imageUrl} alt={title} style={{ maxHeight: '220px' }} />
             </div>
             {/* Horizontal line */}
             <hr className="border-t border-gray-300" />
 
             {/* Body Section */}
-            <div className="flex-grow px-6 py-4 overflow-y-auto">
+            <div className="flex-grow px-6 overflow-hidden" style={{ maxHeight: '348px' }}>
                 <h2 className="text-md font-bold mb-2">{title}</h2>
-                <p className="text-gray-700 text-sm">{details}</p>
+                <p className="text-gray-700 text-sm" style={{ height: '348px', overflow: 'hidden', textOverflow: 'ellipsis', display: '-webkit-box', WebkitLineClamp: 6, WebkitBoxOrient: 'vertical' }}>
+                    {details}
+                </p>
             </div>
             {/* Horizontal line */}
             <hr className="border-t border-gray-300" />

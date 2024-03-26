@@ -27,7 +27,7 @@ export const NEWS_DATA = [
         title: "1 held as group forcibly puts Holi colours on Muslim family in UP",
         details: "One person has been arrested and three minors were detained after a video showing a group forcibly applying Holi colours on a Muslim family in Uttar Pradesh's Bijnor went viral. The family, which included two women, were travelling on a bike and were on their way to get medicines when the group intercepted them, police said.",
         link: "https://www.siasat.com/up-muslim-family-harassed-by-group-playing-holi-1-arrested-2997680/?utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts",
-        shortDetails: 'held as group forcibly puts Holi colours on Muslim family'
+        shortDetails: 'Group forcibly puts Holi colours on Muslim family'
     },
     {
         imageUrl: "https://nis-gs.pix.in/inshorts/images/v1/variants/webp/xs/2024/03_mar/24_sun/img_1711300280894_576.webp?&quot;);",
@@ -60,23 +60,23 @@ export const NEWS_DATA = [
     {
         imageUrl: "https://nis-gs.pix.in/inshorts/images/v1/variants/jpg/m/2024/03_mar/24_sun/img_1711281052252_348.jpg?",
         title: "Kejriwal in jail but still clinging on to CM's post: INC's Sanjay",
-        details: "Congress leader Sanjay Nirupam, while referring to Delhi CM Arvind Kejriwal's arrest in the liquor policy case, said, \"I have sympathy for him as a human being.\" \"The court has to decide what is the truth of Delhi's liquor scam. He's in custody but is still clinging to the post of Chief Minister?\" Nirupam said.",
+        details: "Congress leader Sanjay Nirupam, while referring to Delhi CM Arvind Kejriwal's arrest in the liquor policy case, said, I have sympathy for him as a human being.The court has to decide what is the truth of Delhi's liquor scam. He's in custody but is still clinging to the post of Chief Minister?\" Nirupam said.",
         link: "https://twitter.com/sanjaynirupam/status/1771411038564503682?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1771411038564503682%7Ctwgr%5Ef58be73f15b8702a70ffb6490ec5e3804402ff46%7Ctwcon%5Es1_&utm_campaign=fullarticle&utm_medium=referral&ref_url=https%3A%2F%2Fwww.ndtv.com%2Findia-news%2Fhurting-indian-politics-congress-leader-sanjay-nirupam-on-arvind-kejriwal-continuing-as-chief-minister-5296283&utm_source=inshorts",
-        shortDetails: "'He should immediately resign from his post'"
+        shortDetails: "Truth of Delhi's liquor scam"
     },
     {
         imageUrl: "https://nis-gs.pix.in/inshorts/images/v1/variants/jpg/m/2024/03_mar/24_sun/img_1711279187403_175.jpg?",
         title: "Video shows foreigner woman's obscene dance with men at Holi party in UP, police take action",
         details: "A video showing an obscene dance between several men and a foreigner woman at a Holi party in Uttar Pradesh's Mathura has surfaced online. The party was allegedly attended by famous builders of Mathura. Responding to videos posted online, Mathura Police said that the party was organised without obtaining necessary permission and a case has been registered in this matter.",
         link: "https://www.freepressjournal.in/amp/viral/unholy-holi-in-mathura-vulgar-celebrations-by-builders-lead-to-public-outcry-see-viral-video?utm_campaign=fullarticle&utm_medium=referral&utm_source=inshorts",
-        shortDetails: "To know more"
+        shortDetails: "Foreigner woman's obscene dance in Holi party"
     },
     {
         title: "Maldives President does a U-turn, calls India 'closest ally'",
         details: "Maldives President Muizzu said in an interview that India remains their 'closest ally'. This remark comes when they're seeking debt relief from India. At the end of 2023, Maldives already owed US$400.9 to India. Notably, one of the cornerstones of Muizzu's presidential campaign was the 'India out' strategy. They've followed through on it, warming up to China, until this comment.",
         link: "https://www.business-standard.com/external-affairs-defence-security/news/maldives-president-muizzu-calls-india-it-s-closest-ally-seeks-debt-relief-124032200894_1.html?utm_source=inshorts&utm_medium=referral&utm_campaign=fullarticle",
         imageUrl: "https://nis-gs.pix.in/inshorts/images/v1/variants/jpg/m/2024/03_mar/24_sun/img_1711280898437_588.jpg?",
-        shortDetails: "Maldives President does a U-turn, calls India 'closest ally'",
+        shortDetails: "Maldives President does a U-turn",
     },
     {
         imageUrl: "https://nis-gs.pix.in/inshorts/images/v1/variants/jpg/m/2024/03_mar/24_sun/img_1711282923889_910.jpg?",
